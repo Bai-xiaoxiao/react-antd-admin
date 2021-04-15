@@ -1,2 +1,15 @@
-# react-antd-admin
-react全家桶+antd的后台管理系统
+# umi project
+
+## Getting Started
+
+Install dependencies,
+
+```bash
+$ yarn
+```
+
+Start the dev server,
+
+```bash
+$ yarn start
+```
