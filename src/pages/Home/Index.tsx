@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Style from './index.module.css'
 import PieChart from '../../components/PieChart/Index'
-import {Button} from 'antd'
+import DataCard from '../../components/DataCard/Index'
+import {Button, Divider} from 'antd'
 
 const pieOption = {
   title: {
@@ -48,11 +49,11 @@ export default class Index extends Component {
   render() {
     return (
       <div>
-        <Button onClick={this.reset}>点我重新渲染</Button>
-        <br />
+        <Button onClick={this.reset}>重新渲染数据</Button>
+        <Divider>数据看板--使用echart</Divider>
         <div className={Style['row']}>
+          <div><DataCard /></div>
           <div><PieChart option={pieOption} className={Style['chart']} /></div>
-          <div>2</div>
         </div>
       </div>
     );
